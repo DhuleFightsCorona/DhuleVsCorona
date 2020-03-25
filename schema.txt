@@ -1,0 +1,169 @@
+**Name of respondent (text)*
+
+**Address (Permanent & Current)  (textarea)*
+
+**Number of Family members   (numbers)*
+**Any pregnant women in family ?yes/no  (tooglebutton)
+(In numbers)
+**Any new born baby in family?
+Yes/no
+(In numbers)
+
+
+
+Health Details of you (Member 1)
+
+**Blood group (radio buttons)
+**Any major disease history
+**Any operative history
+**Allergies
+**Weight (approximately)
+**Height ( approximately)
+**Physically challenged ? Yes or No
+**If yes then (In %)
+
+**Medicines required on daily/weekly(specify) basis (if any)
+
+**Insulin or injections required on daily/weekly(specify) basis if any?
+
+Info 
+
+**Age
+**Gender (radio buttons)
+
+**Please let us know your current body temperature
+
+
+**Are you experiencing any of the symptoms below (mark all those applicable)(checklist)
+
+Dry Cough
+Sneezing
+Sore throat
+Weakness
+None of these
+
+**Additionally, please verify if you are experiencing any of the symptoms below (mark all those applicable)(checklist).
+
+Moderate to Severe Cough
+Feeling Breathless
+Difficulty in Breathing
+Drowsiness
+DrowsinessPersistant Pain and Pressure in Chest
+Severe Weakness
+
+**Please select your travel and exposure details
+
+No Travel History
+No contact with anyone with Symptoms
+History of travel or meeting in affected geographical area in last 14 days
+Close Contact with confirmed COVID in last 14 days
+
+
+**If any travel history
+International yes/no(radio buttons)
+(Specify name)
+Interstate yes/no(radio buttons)
+(Specify name)
+Interdistrict yes/no(radio buttons)
+(Specify name)
+
+
+
+**Do you have a history of any of these conditions (mark all those applicable)(checklist)
+
+
+Diabetes
+High Blood Pressure
+Heart Disease
+Kidney Disease
+Lung disease
+Stroke
+StrokeReduced Immunity
+
+
+*How have your symptoms progressed over the last 48 hrs?
+
+Improved
+No Change
+Worsened
+Worsened Considerably
+
+
+Health Details of Member 2
+
+**Blood group (radio buttons)
+**Any major disease history
+**Any operative history
+**Allergies
+**Weight (approximately)
+**Height ( approximately)
+**Physically challenged ? Yes or No
+**If yes then (In %)
+
+**Medicines required on daily/weekly(specify) basis (if any)
+
+**Insulin or injections required on daily/weekly(specify) basis if any?
+
+Info 
+
+**Age
+**Gender (radio buttons)
+If women
+(Are you pregnant)
+
+**Please let us know your current body temperature
+
+
+**Are you experiencing any of the symptoms below (mark all those applicable)(checklist)
+
+Dry Cough
+Sneezing
+Sore throat
+Weakness
+None of these
+
+**Additionally, please verify if you are experiencing any of the symptoms below (mark all those applicable)(checklist).
+
+Moderate to Severe Cough
+Feeling Breathless
+Difficulty in Breathing
+Drowsiness
+DrowsinessPersistant Pain and Pressure in Chest
+Severe Weakness
+
+**Please select your travel and exposure details
+
+No Travel History
+No contact with anyone with Symptoms
+History of travel or meeting in affected geographical area in last 14 days
+Close Contact with confirmed COVID in last 14 days
+
+
+**If any travel history
+International yes/no(radio buttons)
+(Specify name)
+Interstate yes/no(radio buttons)
+(Specify name)
+Interdistrict yes/no(radio buttons)
+(Specify name)
+
+
+
+**Do you have a history of any of these conditions (mark all those applicable)(checklist)
+
+
+Diabetes
+High Blood Pressure
+Heart Disease
+Kidney Disease
+Lung disease
+Stroke
+StrokeReduced Immunity
+
+
+*How have your symptoms progressed over the last 48 hrs?
+
+Improved
+No Change
+Worsened
+Worsened Considerably
