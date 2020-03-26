@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from leap.mediumra.re/blog-article.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Mar 2020 12:01:37 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52115242-16"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-52115242-16');
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KG38NH9');
+
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <title>DhuleVSCorona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A corporate Bootstrap theme by Medium Rare">
+    <style>
+        @keyframes hideLoader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.loader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.loader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.loader {
+            animation: hideLoader .5s linear .5s forwards;
+        }
+
+        /* Typing Animation */
+        .loading-animation {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            animation: typing 1s linear infinite alternate;
+            position: relative;
+            left: -12px;
+        }
+
+        @keyframes typing {
+            0% {
+                background-color: rgba(100, 100, 100, 1);
+                box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2), 24px 0px 0px 0px rgba(100, 100, 100, 0.2);
+            }
+
+            25% {
+                background-color: rgba(100, 100, 100, 0.4);
+                box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 2), 24px 0px 0px 0px rgba(100, 100, 100, 0.2);
+            }
+
+            75% {
+                background-color: rgba(100, 100, 100, 0.4);
+                box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2), 24px 0px 0px 0px rgba(100, 100, 100, 1);
+            }
+        }
+
+    </style>
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            document.querySelector('body').classList.add('loaded');
+        });
+
+    </script>
+    <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loading-animation"></div>
+    </div>
+
+    <div class="navbar-container ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand fade-page" href="index-2.html">
+                    <img src="assets/img/logos/logo.svg" alt="Leap">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg"
+                        alt="menu interface icon" data-inject-svg />
+                    <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg"
+                        alt="cross interface icon" data-inject-svg />
+                </button>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <div class="py-2 py-lg-0">
+                        <ul class="navbar-nav">
+                            <a class="nav-link dropdown-toggle" href=#>Home</a>
+                            <a class="nav-link dropdown-toggle" href=#>Emergency Helpline</a>
+                            <a class="nav-link dropdown-toggle" href=#>About us</a>
+                            <a href=# class="btn btn-primary ml-lg-3">Contribute us</a>
+                    </div>
+                </div>
+        </nav>
+    </div>
+
+    <div class="article-progress" data-sticky="below-nav">
+        <progress class="reading-position" value="0"></progress>
+        <div class="article-progress-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col py-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex">
+                                <div class="text-small text-muted mr-1">Reading:</div>
+                                <div class="text-small">Navigating the complexity of change aversion</div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="text-small text-muted">Share:</span>
+                                <div class="d-flex ml-1">
+                                    <a href="#" class="mx-1 btn btn-sm btn-round btn-primary">
+                                        <img class="icon" src="assets/img/icons/social/twitter.svg"
+                                            alt="twitter social icon" data-inject-svg />
+                                    </a>
+                                    <a href="#" class="mx-1 btn btn-sm btn-round btn-primary">
+                                        <img class="icon" src="assets/img/icons/social/linkedin.svg"
+                                            alt="linkedin social icon" data-inject-svg />
+                                    </a>
+                                    <a href="#" class="mx-1 btn btn-sm btn-round btn-primary">
+                                        <img class="icon" src="assets/img/icons/social/facebook.svg"
+                                            alt="facebook social icon" data-inject-svg />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="pb-0 pb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">DhuleFightsCorona</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Forms</a>
+                                </li>
+                            </ol>
+                        </nav>
+                        <span class="badge bg-primary-alt text-primary">
+                            <img class="icon bg-primary" src="assets/img/icons/interface/heart.svg"
+                                alt="heart interface icon" data-inject-svg />21</span>
+                    </div>
+                    <h1>Enter your details below</h1>
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <div class="text-small text-muted">All fields are mandatory</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-8">
+                    <h2>Primary infomation:</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Enter your name:</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name"
+                                placeholder="name">
+                            <label for="address">Enter your address:</label>
+                            <input type="text" class="form-control" id="address" aria-describedby="address"
+                                placeholder="address">
+                            <label for="family">Number of total family members:</label>
+                            <input type="number" class="form-control" id="family" aria-describedby="family"
+                                placeholder="0">
+                            <label for="preg-women">Number of pregnant womens in the family if any:</label>
+                            <input type="number" class="form-control" id="preg-women" aria-describedby="preg-women"
+                                placeholder="0">
+                            <label for="newbie">Number of new born babies in the family if any:</label>
+                            <input type="number" class="form-control" id="newbie" aria-describedby="newbie"
+                                placeholder="0">
+                        </div>
+                        <h2>Health details:</h2>
+                        <div class="form-group">
+                            <label for="blood-group">Specify your blood group:</label>
+                            <select class="custom-select">
+                                <option selected>Blood Group</option>
+                                <option value="1">A+</option>
+                                <option value="2">A-</option>
+                                <option value="4">B+</option>
+                                <option value="5">B-</option>
+                                <option value="6">AB+</option>
+                                <option value="7">AB-</option>
+                                <option value="3">O+</option>
+                                <option value="3">O-</option>
+                            </select>
+                            <img class="icon" src="assets/img/icons/interface/arrow-caret.svg"
+                                alt="arrow-caret interface icon" data-inject-svg />
+                            <label>In case of medical emergency will you be available for blood donation
+                                ?:</label>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="yes1" name="custom-radio" class="custom-control-input">
+                                <label class="custom-control-label" for="yes1">Yes</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="no1" name="custom-radio" class="custom-control-input">
+                                <label class="custom-control-label" for="no1">No</label><br>
+                            </div>
+                            <label for="prev-dis">Any previous disease history:</label>
+                            <input type="text" class="form-control" id="prev-dis" aria-describedby="prev-dis"
+                                placeholder="mention here">
+                            <label for="operation">Any operative history:</label>
+                            <input type="text" class="form-control" id="operation" aria-describedby="operation"
+                                placeholder="mention here">
+                            <label for="allergy">Allergies:</label>
+                            <input type="text" class="form-control" id="allergy" aria-describedby="allergy"
+                                placeholder="mention here">
+                            <label for="weight">Weight (in Kgs):</label>
+                            <input type="number" class="form-control" id="weight" aria-describedby="weight"
+                                placeholder="0">
+                            <label for="height">Height (in cm):</label>
+                            <input type="number" class="form-control" id="height" aria-describedby="height"
+                                placeholder="0">
+                            <label for="age">Age:</label>
+                            <input type="number" class="form-control" id="age" aria-describedby="age" placeholder="0">
+                            <label>Gender:</label>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="male" name="custom-radio" class="custom-control-input">
+                                <label class="custom-control-label" for="male">Male</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="female" name="custom-radio" class="custom-control-input">
+                                <label class="custom-control-label" for="female">Female</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="other" name="custom-radio" class="custom-control-input">
+                                <label class="custom-control-label" for="other">Other</label>
+                            </div>
+                            <label for="">Physically challenged?:</label>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="yes" name="custom-radio" class="custom-control-input">
+                                <label class="custom-control-label" for="yes">Yes</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="no" name="custom-radio" class="custom-control-input">
+                                <label class="custom-control-label" for="no">No</label>
+                            </div>
+                            <label for="percent">If yes then how many percent(in %):</label>
+                            <input type="number" class="form-control" id="percent" aria-describedby="percent"
+                                placeholder="0">
+                            <label for="med">Medicines required on daily/monthly basis(specify if
+                                any):</label>
+                            <input type="text" class="form-control" id="med" aria-describedby="med"
+                                placeholder="medicines">
+                            <label for="ins">Insulin or injections required on daily/weekly
+                                basis(specify if any):</label>
+                            <input type="text" class="form-control" id="ins" aria-describedby="ins"
+                                placeholder="specify their names">
+                            <label for="temp">Please let us know your current body temperature (in
+                                °C):</label>
+                            <input type="number" class="form-control" id="temp" aria-describedby="temp" placeholder="0">
+                            <label for="symp1">Are you experiencing any of the symptoms below(mark all
+                                those applicable):</label>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="custom-1">
+                                <label class="custom-control-label" for="custom-1">Dry cough</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="custom-2">
+                                <label class="custom-control-label" for="custom-2">Sneezing</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="custom-3">
+                                <label class="custom-control-label" for="custom-3">Sore throat</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="custom-4">
+                                <label class="custom-control-label" for="custom-4">Weakness</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="custom-5">
+                                <label class="custom-control-label" for="custom-5">None of these</label>
+                            </div>
+                            <label for="">Additionally ,please verify if you are experiencing any of the symptoms
+                                below(mark all
+                                those applicable):</label>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="custom-checkbox-example-6">
+                                <label class="custom-control-label" for="custom-checkbox-example-6">Moderate to
+                                    severe
+                                    cough</label><br>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="custom-checkbox-example-7">
+                                <label class="custom-control-label" for="custom-checkbox-example-7">feeling
+                                    breathless</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="custom-checkbox-example-8">
+                                <label class="custom-control-label" for="custom-checkbox-example-8">Difficulty in
+                                    breathing</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="custom-checkbox-example-9">
+                                <label class="custom-control-label" for="custom-checkbox-example-9">Drowsiness</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="custom-checkbox-example-10">
+                                <label class="custom-control-label" for="custom-checkbox-example-10">Persistant pain
+                                    and
+                                    pressure in chest</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="custom-checkbox-example-11">
+                                <label class="custom-control-label" for="custom-checkbox-example-11">Severe
+                                    weakness</label>
+                            </div>
+                            <label for="sym2">Symptoms which are not listed above(specify if
+                                any):</label>
+                            <input type="text" class="form-control" id="sym2" aria-describedby="sym2"
+                                placeholder="Symptoms">
+                            <label for="trav">Please select your travel and exposure details:</label>
+                            <select class="custom-select">
+                                <option value="1">No Travel History</option>
+                                <option value="2">No contact with anyone with Symptoms</option>
+                                <option value="4">History of travel or meeting in affected geographical area in last
+                                    14
+                                    days</option>
+                                <option value="6">Close Contact with confirmed COVID in last 14 days</option>
+                            </select>
+                            <label>If any travel history (please select type):</label>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="int">
+                                <label class="custom-control-label" for="int">International</label><br>
+                                <label for="travel1">Specify name:</label>
+                                <input type="text" class="form-control" id="travel1" aria-describedby="travel1">
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="int1">
+                                <label class="custom-control-label" for="int1">Interstate</label><br>
+                                <label for="">Specify name:</label>
+                                <input type="text" class="form-control" id="" aria-describedby="">
+                            </div>
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="int2">
+                                <label class="custom-control-label" for="int2">Interdistrict</label><br>
+                                <label for="">Specify name:</label>
+                                <input type="text" class="form-control" id="" aria-describedby="">
+                            </div>
+                            <label for="">Do you have a history of any of these conditions (mark all those
+                                applicable):
+                                </lable>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="cond1">
+                                    <label class="custom-control-label" for="cond1">Diabetes</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="cond2">
+                                    <label class="custom-control-label" for="cond2">High Blood Pressure</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="cond3">
+                                    <label class="custom-control-label" for="cond3">Heart Disease</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="cond4">
+                                    <label class="custom-control-label" for="cond4">Kidney Disease</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="cond5">
+                                    <label class="custom-control-label" for="cond5">Lung Disease</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="cond6">
+                                    <label class="custom-control-label" for="cond6">Stroke</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="cond7">
+                                    <label class="custom-control-label" for="cond7">StrokeReduced Immunity</label>
+                                </div>
+                                <label>How have your symptoms progressed over the last 48 hours ?:</label>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="prog1" name="custom-radio" class="custom-control-input">
+                                    <label class="custom-control-label" for="prog1">Improved</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="prog2" name="custom-radio" class="custom-control-input">
+                                    <label class="custom-control-label" for="prog2">No Change</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="prog3" name="custom-radio" class="custom-control-input">
+                                    <label class="custom-control-label" for="prog3">Worsened</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="prog4" name="custom-radio" class="custom-control-input">
+                                    <label class="custom-control-label" for="prog4">Worsened Considerably</label>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="has-divider">
+        <div class="container pt-3">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-10">
+                    <hr>
+                    <div class="d-flex align-items-center">
+                        <span class="text-small mr-1">Share this form:</span>
+                        <div class="d-flex mx-2">
+                            <a href="#" class="btn btn-round btn-primary mx-1">
+                                <img class="icon icon-sm" src="assets/img/icons/social/twitter.svg"
+                                    alt="twitter social icon" data-inject-svg />
+                            </a>
+                            <a href="#" class="btn btn-round btn-primary mx-1">
+                                <img class="icon icon-sm" src="assets/img/icons/social/facebook.svg"
+                                    alt="facebook social icon" data-inject-svg />
+                            </a>
+                            <a href="#" class="btn btn-round btn-primary mx-1">
+                                <img class="icon icon-sm" src="assets/img/icons/social/linkedin.svg"
+                                    alt="linkedin social icon" data-inject-svg />
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <hr>
+                    <h5 class="my-4">Post a comment</h5>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-1">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name" name="comment-name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-1">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email Address"
+                                        name="comment-email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="comment-text" rows="7"
+                                placeholder="Comment"></textarea>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="comment-form-opt-in">
+                                <label class="custom-control-label text-small" for="comment-form-opt-in">Notify me when
+                                    someone replies</label>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="divider">
+            <img class="bg-primary-alt" src="assets/img/dividers/divider-1.svg" alt="divider graphic" data-inject-svg />
+        </div>
+    </section>
+    <section class="bg-primary-alt">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h3 class="h2">Related Stories</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://timesofindia.indiatimes.com/india/india-lockdown-for-21-days-all-of-india-under-lockdown-for-3-weeks-due-to-coronavirus-in-india/articleshow/74801459.cms"
+                        class="card card-body justify-content-between bg-primary text-light">
+                        <div class="d-flex justify-content-between mb-3">
+                            <div class="text-small d-flex">
+                                <div class="mr-2">
+                                    Links
+                                </div>
+                                <span class="opacity-70">14th april</span>
+                            </div>
+                            <span class="badge bg-primary-alt text-primary">
+                                <img class="icon icon-sm bg-primary" src="assets/img/icons/interface/heart.svg"
+                                    alt="heart interface icon" data-inject-svg />27
+                            </span>
+                        </div>
+                        <div>
+                            <h2>India locked down for 21 days to avoid the corona virus outbreak</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card">
+                        <a href="#">
+                            <img src="assets/img/coronavirus.jpg" alt="Image" class="card-img-top">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="text-small d-flex">
+                                    <div class="mr-2">
+                                        <a href="#">Awareness</a>
+                                    </div>
+                                    <span class="text-muted">26 march</span>
+                                </div>
+                                <span class="badge bg-primary-alt text-primary">
+                                    <img class="icon icon-sm bg-primary" src="assets/img/icons/interface/heart.svg"
+                                        alt="heart interface icon" data-inject-svg />12
+                                </span>
+                            </div>
+                            <a
+                                href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters">
+                                <h4>Corona virus myth busters</h4>
+                            </a>
+                            <p class="flex-grow-1">
+                                Along with corona virus we have also witnessed outbreak of myths about coronavirus.
+                            </p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="assets/img/avatars/WHO.png" alt="Image" class="avatar avatar-sm">
+                                <div class="ml-1">
+                                    <span class="text-small text-muted">WHO</span>
+                                    <span class="text-small">(world health organisation)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card">
+                        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">
+                            <img src="assets/img/precautions.jpg" alt="Image" class="card-img-top">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="text-small d-flex">
+                                    <div class="mr-2">
+                                        <a href="#">Selfcare</a>
+                                    </div>
+                                    <span class="text-muted">12 feb</span>
+                                </div>
+                                <span class="badge bg-primary-alt text-primary">
+                                    <img class="icon icon-sm bg-primary" src="assets/img/icons/interface/heart.svg"
+                                        alt="heart interface icon" data-inject-svg />23
+                                </span>
+                            </div>
+                            <a href="#">
+                                <h4>precautions by WHO to avoid corona virus infection</h4>
+                            </a>
+                            <p class="flex-grow-1">
+                                You can avoid corona virus infection with proper hygiene and small lifestyle changes.
+                            </p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="assets/img/avatars/WHO.png" alt="Image" class="avatar avatar-sm">
+                                <div class="ml-1">
+                                    <span class="text-small text-muted">WHO</span>
+                                    <span class="text-small">(world health organisation)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="pb-4 bg-primary-3 text-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col">
+                    <a href="index-2.html">
+                        <img src="assets/img/logo-white.svg" alt="Leap" class="icon icon-md mb-3">
+                    </a>
+                    <p class="pr-xl-3">
+                        Created and operated by group of students from Dhule.Non profit organisation.
+                    </p>
+                </div>
+                <div class="col-6 col-lg col-xl-2">
+                    <h5>Navigate</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Emergency Helpline</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex">
+                            <img class="icon" src="assets/img/icons/theme/map/marker-1.svg" alt="marker-1 icon"
+                                data-inject-svg />
+                            <div class="ml-3">
+                                <span>424002,Dhule
+                                    <br />Maharashtra,India</span>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <img class="icon" src="assets/img/icons/theme/communication/call-1.svg" alt="call-1 icon"
+                                data-inject-svg />
+                            <div class="ml-3">
+                                <span>+91 9420257447</span>
+                                <span class="d-block text-muted text-small">24/7</span>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex">
+                            <img class="icon" src="assets/img/icons/theme/communication/mail.svg" alt="mail icon"
+                                data-inject-svg />
+                            <div class="ml-3">
+                                <a href="#">DhuleFightsCorona@gmail.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="row justify-content-center mb-2">
+                    <div class="col-auto">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img class="icon undefined" src="assets/img/icons/social/instagram.svg"
+                                        alt="instagram social icon" data-inject-svg />
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img class="icon undefined" src="assets/img/icons/social/twitter.svg"
+                                        alt="twitter social icon" data-inject-svg />
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img class="icon undefined" src="assets/img/icons/social/youtube.svg"
+                                        alt="youtube social icon" data-inject-svg />
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img class="icon undefined" src="assets/img/icons/social/medium.svg"
+                                        alt="medium social icon" data-inject-svg />
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img class="icon undefined" src="assets/img/icons/social/facebook.svg"
+                                        alt="facebook social icon" data-inject-svg />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col col-md-auto text-center">
+                        <small class="text-muted">&copy;2019 All Rights Reserved. Your Brand® is a registered trademark
+                            of
+                            Your Company</small>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up"
+        data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+        <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
+    </a>
+    <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!-- 
+             This appears in the demo only.  This script ensures our demo countdowns are always showing a date in the future 
+             by altering the date before the countdown is initialized 
+        -->
+    <script type="text/javascript">
+        (function ($) {
+            var now = new Date;
+            var day = 864e5;
+            var weeksToAdd = 2;
+            var tenWeeksFromNow = new Date(+now + day * 7 * weeksToAdd).toISOString().slice(0, 10).replace(/\-/g,
+                'index.html');
+            $('[data-countdown-date].add-countdown-time').attr('data-countdown-date', tenWeeksFromNow);
+        })(jQuery);
+
+    </script>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+
+    <script type="text/javascript">
+        // This script appears only in the demo - it disables forms with no action attribute to prevent 
+        // navigating away from the page.
+        jQuery("form:not([action])").on('submit', function () {
+            return false;
+        });
+
+    </script>
+
+</body>
+
+
+<!-- Mirrored from leap.mediumra.re/blog-article.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Mar 2020 12:01:37 GMT -->
+
+</html>
