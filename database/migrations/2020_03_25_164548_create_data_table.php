@@ -20,6 +20,7 @@ class CreateDataTable extends Migration
             $table->integer('pregnent_count')->unsigned()->nullable()->default(0);
             $table->integer('newborn_count')->unsigned()->nullable()->default(0);
             $table->integer('family_count')->unsigned()->nullable()->default(1);
+            $table->ipAddress('visitor')->nullable();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
