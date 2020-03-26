@@ -1,4 +1,4 @@
- <div id="step-2" class=" @if($is_medical_history) active @endif tab-pane step-content" style="">
+ <div id="step-2" class=" @if($steps==1) active @endif tab-pane step-content" style="">
                   <div class="p-4 bg-primary-alt">
                     <div class="col-xl-12 col-lg-12 text-center">
                     <h2>Health Details</h2>

@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','HomeController@home');
 Route::resource('/f', 'DataController');
+Route::get('/news','HomeController@news');

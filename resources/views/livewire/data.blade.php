@@ -1,4 +1,4 @@
- <div id="step-1" class="active tab-pane step-content" style="">
+ <div id="step-1" class="@if($steps==0) active @endif tab-pane step-content" style="">
                   <div class="p-4 bg-primary-alt">
                     <div class="col-xl-12 col-lg-12 text-center">
                     <h2>Primary infomation:</h2>

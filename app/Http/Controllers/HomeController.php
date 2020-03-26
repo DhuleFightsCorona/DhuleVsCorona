@@ -14,7 +14,12 @@ class HomeController extends Controller
     */
     public function home()
     {
-        return view('base');
+        return view('home');
+    }
+
+    public function news()
+    {
+        return view('news');
     }
 
     
