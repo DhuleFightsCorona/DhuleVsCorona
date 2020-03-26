@@ -1,0 +1,21 @@
+svg{
+    padding: 20px;
+    background-color: rgba(100, 209, 214, 0.295);
+    border-radius: 20px;
+    transition: transform 1.5s;
+    margin: 20px;
+    
+}
+svg:hover{
+    transform: scale(1.01);
+    -webkit-filter: drop-shadow(6px 6px 3px rgba(0,0,0,0.2));
+    filter: drop-shadow(6px 6px 3px rgba(0,0,0,0.2));
+
+}
+table,th{
+
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: large;
+    text-align: center;
+}
