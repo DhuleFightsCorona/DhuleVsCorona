@@ -54,8 +54,33 @@ class DataRequest extends FormRequest
     public function messages()
     {
         return [
-            'title.required' => 'A title is required',
-            'body.required'  => 'A message is required',
+            'name.required' => 'Please enter your Full Name',
+            'name.max' => 'Name should not exceed 200 Characters.',
+            'mobile.required'  => 'Please enter your Mobile no.',
+            'adress.required'  => 'Please enter your Address',
+            'adress.max'  => 'Address should not exceed 200 Characters.',
+            'pregnent_count.required'  => 'Please mention if there is a Pregnant Woman in your Family.',
+            'newborn_count.required'  => 'Please mention if there is a New-born in your Family.',
+            'family_count.required'  => 'Please mention number of Family Members.',
+            'blood_group.required'  => 'Please mention Blood Group.',
+            'blood_group.max'  => 'Blood Group should not exceed 100 Characters.',            
+            'disease_history.max'  => 'Disease History should not exceed 100 Characters.',            
+            'operative_history.max'  => 'Operation History should not exceed 100 Characters.',            
+            'is_physically_challenged.required'  => 'Please mention if you are Physically Challenged.',
+            'medicine.required'  => 'Please mention your Medicines.',
+            'medicine.max'  => 'Medicines details should not exceed 50 Characters.',
+            'insulin.required'  => 'Please mention your Insulin intake.',
+            'insulin.max'  => 'Insulin details should not exceed 50 Characters.',
+            'weight.max'  => 'Weight should not exceed 30 Characters.',
+            'height.max'  => 'Height should not exceed 30 Characters.',
+            'age.required'  => 'Please mention your Age.',
+            'gender.required'  => 'Please mention your Gender.',
+            'temp.required'  => 'Please mention your Body Temperature (in Degree Celsius).',
+            'symptoms.max'  => 'Symptoms should not exceed over 50 Characters.',
+            'symptoms.required'  => 'Please mention your Symptoms you are facing.',
+            'exposure.required'  => 'Please mention your Travel Exposure Details.',
+            'exposure.required'  => 'Travel Exposure Details should not exceed over 50 Characters.',
+            
         ];
     }
 }
