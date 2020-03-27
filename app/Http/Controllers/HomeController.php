@@ -19,10 +19,19 @@ class HomeController extends Controller
 
     public function news()
     {
-        return view('news');
+        return view('formfilled');
+    }
+    public function helpline()
+    {
+        return view('emergency');
     }
 
-    
-
-
+    public function cluster()
+    {
+        return view('cluster');
+    }
+    public function faq()
+    {
+        return view('faq');
+    }
 }

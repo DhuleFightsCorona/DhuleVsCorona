@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Data;
 use Illuminate\Http\Request;
+use App\Http\Requests\DataRequest;
+use App\User; 
+use App\Information; 
 
 class DataController extends Controller
 {
@@ -24,7 +27,7 @@ class DataController extends Controller
      */
     public function create()
     {
-        //
+        return view('form');
     }
 
     /**
@@ -33,9 +36,32 @@ class DataController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(DataRequest $request)
     {
-        //
+        
+        $request['visitor']=$request->ip();
+        $request['symptoms']= serialize($request->symptoms);
+        $request['exposure']=serialize($request->exposure);
+        $request['travel']=serialize($request->travel);
+        $request['medical_condition']=serialize($request->medical_condition);
+        
+        $user = User::firstOrCreate(
+            ['mobile' => $request->mobile],
+            $request->all()
+        );
+        $request['user_id']=$user->id;
+        
+        $data = Data::firstOrCreate(
+            ['id' => $user->id],
+            $request->all()
+        );
+        
+        $request['data_id']=$data->id;
+        $information = Information::create($request->all());
+        $user->fill(['is_fully_registered' => 1]);
+        $user->save();
+        // dd($request->all(),$user->get(),$data,$information);
+        return view('formfilled');
     }
 
     /**

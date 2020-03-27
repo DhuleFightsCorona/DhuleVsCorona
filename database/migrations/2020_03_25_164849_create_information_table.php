@@ -16,7 +16,6 @@ class CreateInformationTable extends Migration
         Schema::create('information', function (Blueprint $table) {
             $table->id();
             $table->string('blood_group')->nullable()->default('A+ve');
-            $table->string('disease_history', 100)->nullable();
             $table->string('operative_history', 200)->nullable();
             $table->string('weight', 100)->nullable();
             $table->string('height', 100)->nullable();
@@ -28,7 +27,10 @@ class CreateInformationTable extends Migration
             $table->string('temp')->nullable();
             $table->string('symptoms', 100)->nullable();
             $table->string('exposure', 100)->nullable();
+            $table->string('travel', 100)->nullable();
             $table->string('symptoms_condition', 100)->nullable();
+            $table->string('medical_condition', 100)->nullable();
+            $table->string('symptoms_details', 100)->nullable();
             $table->foreignId('data_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });

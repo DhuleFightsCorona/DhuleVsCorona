@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','HomeController@home');
-Route::resource('/f', 'DataController');
+Route::resource('f', 'DataController');
 Route::get('/news','HomeController@news');
+Route::get('/helpline','HomeController@helpline');
+Route::get('/cluster','HomeController@cluster');
+Route::get('/faq','HomeController@faq');
