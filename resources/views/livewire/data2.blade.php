@@ -233,10 +233,8 @@
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
         $(".wizard").on("showStep", function (e, anchorObject, stepNumber, stepDirection) {
-            console.log("You are on step " + stepNumber + " now");
-            console.log( @this.get('steps'));
-        @this.set('steps', stepNumber);
+        @this.set('steps', stepNumber)
     });
-    })
+    });
 </script>
 @endpush
