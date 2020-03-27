@@ -41,7 +41,7 @@
     <!-- Typed text (animated typing effect)-->
     <script type="text/javascript" src="template/assets/js/typed.min.js'}}"></script> --}}
     <!-- Required theme scripts (Do not remove) -->
-    <script type="text/javascript" src="{{asset('assets/js/svg-injector.umd.production.js')}}"></script>
+    {{-- <script type="text/javascript" src="{{asset('assets/js/svg-injector.umd.production.js')}}"></script> --}}
     <script type="text/javascript" src="{{asset('assets/js/jquery.smartWizard.min.js')}}"></script>
     <script src="{{asset('js/all.js') }}"></script>
 
