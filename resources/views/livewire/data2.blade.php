@@ -72,8 +72,8 @@
                         <label>Are you physically challenged?*</label>
                         <select class="form-control" wire:model='is_physically_challenged' name="is_physically_challenged">
                             <option selected>Select</option>    
-                            <option value="no">No</option>
-                                <option value="yes">Yes</option>
+                            <option value="0">No</option>
+                                <option value="1">Yes</option>
                                 
                             </select>
                              @error('is_physically_challenged') <div class="text-danger">{{ $message }}</div> @enderror
