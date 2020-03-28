@@ -1,5 +1,4 @@
 <div>
-@livewire('banner')
 <section class="bg-primary-alt">
       <div class="container">
         <div class="row mb-4">
