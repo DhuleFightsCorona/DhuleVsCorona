@@ -30,7 +30,7 @@
                 <div class="d-flex align-items-center mt-3">
                   <div class="ml-1">
                     <span class="text-small text-muted">By</span>
-                    <span class="text-small">{{$article['author']}}</span>
+                    <span class="text-small">{{$article['source']['name']}}</span>
                   </div>
                 </div>
               </div>

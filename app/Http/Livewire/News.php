@@ -14,7 +14,6 @@ class News extends Component
         if($respons->successful())
         {
             $this->response=$respons->json();
-            // dd($respons);
         }
 
     }
