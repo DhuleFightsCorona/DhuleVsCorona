@@ -10,7 +10,7 @@
          @foreach ($response['articles'] as $article)
     <div class="col-md-6 col-lg-4 d-flex">
             <div class="card">
-              <a href="{{$article['url']}}">
+              <a href="{{$article['url']}}" target='_blank'>
                 <img src="{{$article['urlToImage']}}" height="200px" width="220px" alt="Image" class="card-img-top">
               </a>
               <div class="card-body d-flex flex-column">
@@ -21,7 +21,7 @@
                   </div>
                   
                 </div>
-                <a href="{{$article['url']}}">
+                <a href="{{$article['url']}}" target='_blank'>
                   <h4>{{$article['title']}}</h4>
                 </a>
                 <p class="flex-grow-1">

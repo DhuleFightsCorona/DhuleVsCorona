@@ -30,7 +30,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col col-md-auto text-center">
-            <div>Developed by <a target='_blank' href="https://github.com/pushpak1300.github.io">Pushpak,</a> <a target='_blank' href="https://github.com/typhoon99">Pushkar,</a><a target='_blank' href="https://github.com/himanshupatil363">Himanshu</a></div>
+            <div>Developed by <a target='_blank' href="https://pushpak1300.github.io">Pushpak,</a> <a target='_blank' href="https://github.com/typhoon99">Pushkar,</a><a target='_blank' href="https://github.com/himanshupatil363">Himanshu</a></div>
             <small class="text-muted text-white">&copy;2020 DhuleFightsCorona 
             </small>
             
