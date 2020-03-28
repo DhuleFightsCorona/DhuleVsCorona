@@ -35,7 +35,7 @@ class DataRequest extends FormRequest
         'operative_history' => 'nullable|max:100|string',
         'weight' => 'nullable|max:30|string',
         'height' => 'nullable|max:30|string',
-        'is_physically_challenged' => 'required|boolean',
+        'is_physically_challenged' => 'required',
         'medicine' => 'nullable|string|max:50',
         'allergy' => 'nullable|string|max:50',
         'insulin' => 'nullable|string|max:50',
@@ -44,9 +44,9 @@ class DataRequest extends FormRequest
         'temp' => 'required|string|max:50',
         'symptoms.*' => 'nullable|string|max:50',
         'symptoms_details' => 'nullable|string|max:200',
-        'exposure.*' => 'required|string|max:50',
+        'exposure.*' => 'nullable|string|max:50',
         'symptoms_condition' => 'required|string',
-        'medical_condition.*' => 'requiredIf:is_medical_history,1|string|max:50',
+        'medical_condition.*' => 'nullable|string|max:50',
         'travel.*' => 'nullable|string|max:50'
         ];
     }

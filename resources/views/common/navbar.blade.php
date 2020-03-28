@@ -2,7 +2,7 @@
       <nav class="navbar navbar-expand-lg bg-white navbar-light" data-sticky="top">
         <div class="container">
           <a class="navbar-brand fade-page" href="/">
-            <img src="https://www.covid19india.org/icon.png" height="30px" width="30px" alt="Dhule Fights Corona">
+            <img src="{{asset('assets/logo.png')}}" height="30px" width="30px" alt="Dhule Fights Corona">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
             <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" />
@@ -24,7 +24,7 @@
                   <a href="/cluster" class="nav-link">Cluster</a>
                 </li>              
               </ul>
-            </div><a href="" class="btn btn-primary ml-lg-3">Contribute</a>
+            </div><a href="/f" class="btn btn-primary ml-lg-3">Form</a>
 
           </div>
         </div>
