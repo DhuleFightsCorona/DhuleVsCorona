@@ -45,17 +45,7 @@
 
               </div>
             </div>
-            <div class="d-flex mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="NaN">
-              <div class="process-circle bg-primary"></div>
-              <div class="ml-3">
-                 <h5 class="mb-0">Why are you guys putting in time and resources to do this while not
-                                    gaining a single penny from it?</h5>
-                                <span class="text-small text-muted">Because it affects all of us. Today it's someone
-                                    else who is getting infected. Tomorrow it will be us. We need to prevent the spread.
-                                    We need to document the data so that people with knowledge are able to use this data
-                                    to make informed decisions.</span>
-              </div>
-            </div>
+            
             <div class="d-flex mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="NaN">
               <div class="process-circle bg-primary"></div>
               <div class="ml-3">

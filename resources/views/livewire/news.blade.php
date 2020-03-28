@@ -1,9 +1,9 @@
 <div>
-<section class="bg-primary-alt">
+<section class="bg-primary-alt" style="padding:2rem">
       <div class="container">
-        <div class="row mb-4">
-          <div class="col">
-            <h3 class="h2">Top Headlines of COVID-19</h3>
+        <div class="row ">
+          <div class="col text-center">
+            <h3 class="h2">Top Headlines over Corona</h3>
           </div>
         </div>
         <div class="row">

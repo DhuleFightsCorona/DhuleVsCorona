@@ -165,7 +165,24 @@
 
 
 
-            <div class="custom-control custom-checkbox mb-3 text-center">
+            
+            <div class="col-lg-12">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label>Are you experiencing any of the symptoms below(mark all those applicable)</label>
+                            <select  wire:model='medical_condition' class="form-control" multiple name='medical_condition[]'>
+                                <option>Diabetes</option>
+                                <option>High Blood Pressure</option>
+                                <option>Kidney Disease</option>
+                                <option>Heart Disease</option>
+                                <option>Lung Disease</option>
+                                <option>Strokes</option>
+                                <option>Reduced Immunity</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox mb-3 text-center">
                 <input wire:model='is_medical_history' name='is_medical_history' type="checkbox" class="custom-control-input" id="customCheck3">
                 <label class="custom-control-label" for="customCheck3">Select checkbox if you have any Medical
                     history.</label>
@@ -192,7 +209,7 @@
                     <div class="form-group">
                         <label for="med">Medicines required on daily/monthly basis(specify if
                             any):</label>
-                        <input wire:model='medicine' type="text" class="form-control" id="medicine" name="medicine" aria-describedby="med" placeholder="medicines">
+                        <input wire:model='medicine' type="text" class="form-control" id="medicine" name="medicine" aria-describedby="med" placeholder="Eg: Medicine Daily Two Times">
                              @error('medicine') <div class="text-danger">{{ $message }}</div> @enderror
                     </div>
                 </div>
@@ -200,26 +217,11 @@
                     <div class="form-group">
                         <label for="ins">Insulin or injections required on daily/weekly basis(specify if any):</label>
                         <input wire:model='insulin' type="text" class="form-control" id="insulin" name="insulin" aria-describedby="ins"
-                            placeholder="specify their names">
+                            placeholder="Eg: Insuline Daily Two Times">
                              @error('insulin') <div class="text-danger">{{ $message }}</div> @enderror
                     </div>
                 </div>
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label>Are you experiencing any of the symptoms below(mark all those applicable)</label>
-                            <select  wire:model='medical_condition' class="form-control" multiple name='medical_condition[]'>
-                                <option>Diabetes</option>
-                                <option>High Blood Pressure</option>
-                                <option>Kidney Disease</option>
-                                <option>Heart Disease</option>
-                                <option>Lung Disease</option>
-                                <option>Strokes</option>
-                                <option>Reduced Immunity</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
+                
 
             </div>
         

@@ -12,3 +12,7 @@
     <link href="{{asset('assets/css/theme.min.css')}}" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="font" href="{{asset('assets/fonts/Inter-UI-upright.var.woff2')}}" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="{{asset('assets/fonts/Inter-UI.var.woff2')}}" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="alternate" hreflang="en" href="https://dhulefightscorona.tech">
+    <link rel="alternate" hreflang="hi" href="https://hi.dhulefightscorona.tech">
+    <link rel="alternate" hreflang="mr" href="https://mr.dhulefightscorona.tech">
