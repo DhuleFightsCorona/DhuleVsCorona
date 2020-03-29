@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="chart"></canvas>
+    </div>
+
+    <script>
+        let myChart = document.getElementById('chart').getContext('2d');
+
+        // Global Options
+        Chart.defaults.global.defaultFontFamily = 'Lato';
+        Chart.defaults.global.defaultFontSize = 18;
+        Chart.defaults.global.defaultFontColor = '#777';
+        async function getData() {
+            const api_url = "https://api.covid19india.org/state_district_wise.json";
+            const response = await fetch(api_url);
+            // console.log(response);
+            const data1 = await response.json();
+            var keys = Object.keys(data1.Maharashtra.districtData);
+            var data = data1.Maharashtra.districtData;
+            var arr = []
+            Object.keys(data).forEach(key => {
+                    arr.push(data[key].confirmed);
+            });
+
+            var dynamicColors = function () {
+                var r = Math.floor(Math.random() * 255);
+                var g = Math.floor(Math.random() * 255);
+                var b = Math.floor(Math.random() * 255);
+                return "rgba(" + r + "," + g + "," + b + "," + 0.5 + ")";
+            };
+
+            var color = [];
+            Object.keys(data).forEach(key => {
+                color.push(dynamicColors());
+            });
+
+            console.log(color); 
+            let coronaChart = new Chart(myChart, {
+                type: 'doughnut', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+                data: {
+                    labels: keys,
+                    datasets: [{
+                        label: 'Confirmed Cases',
+                        data: arr,
+                        //backgroundColor:'green',
+                        backgroundColor: color,
+                        borderWidth: 1,
+                        borderColor: '#777',
+                        hoverBorderWidth: 3,
+                        hoverBorderColor: '#000'
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: 'Corona Patients in Maharashtra',
+                        fontSize: 25
+                    },
+                    legend: {
+                        display: true,
+                        position: 'right',
+                        labels: {
+                            fontColor: '#000'
+                        }
+                    },
+                    layout: {
+                        padding: {
+                            left: 50,
+                            right: 0,
+                            bottom: 0,
+                            top: 0
+                        }
+                    },
+                    tooltips: {
+                        enabled: true
+                    }
+                }
+            });
+        }
+
+        getData();
+    </script>
+</body>
+
+</html>
