@@ -2,7 +2,7 @@
                   <div class="p-3 bg-primary-alt">
                     <div class="col-xl-12 col-lg-12 text-center">
                       
-                    <h2>Primary infomation:</h2>
+                    <h2>Primary information:</h2>
                    
       <div class="form-group" >
         <label for="name title">Enter Your Name *</label>
@@ -29,7 +29,7 @@
 
       <div class="custom-control custom-checkbox mb-3">
       <input wire:model='is_preg' type="checkbox" class="custom-control-input"  name="is_preg" id="customCheck1" value="{{old('is_preg')}} " >
-        <label class="custom-control-label" for="customCheck1">Is there any pregnent women in family?</label>
+        <label class="custom-control-label" for="customCheck1">Is there any pregnant women in family?</label>
       </div>
       @if ($is_preg)
       <div class="form-group ">

@@ -16,3 +16,23 @@
     <link rel="alternate" hreflang="en" href="https://dhulefightscorona.tech">
     <link rel="alternate" hreflang="hi" href="https://hi.dhulefightscorona.tech">
     <link rel="alternate" hreflang="mr" href="https://mr.dhulefightscorona.tech">
+    <style>
+      section {
+    padding: 1rem 0;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+}
+.last-update {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-bottom: auto;
+    margin-top: .25rem;
+}
+    </style>

@@ -1,5 +1,5 @@
 <div>
-<section class="bg-primary-alt" style="padding:2rem">
+<section class="bg-primary-alt" style="padding:1rem">
       <div class="container">
         <div class="row ">
           <div class="col text-center">
