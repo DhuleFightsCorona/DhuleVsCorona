@@ -94,6 +94,7 @@
                     <option>Drowsiness</option>
                     <option>Persistant pain and pressure in chest</option>
                     <option>Severe Weakness</option>
+                    <option>None Of The Above</option>
                 </select>
             </div>
             <div class="form-group text-center">
@@ -134,10 +135,11 @@
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label>Any Travel History (mark all those applicable)</label>
-                        <select wtre:model='travel' class="form-control" multiple name='travel[]'>
+                        <select class="form-control" multiple name='travel[]'>
                             <option>International</option>
                             <option>Interstate</option>
                             <option>Interdistrict</option>
+                            <option>None Of The Above</option>
                         </select>
                     </div>
                 </div> 
@@ -178,6 +180,7 @@
                                 <option>Lung Disease</option>
                                 <option>Strokes</option>
                                 <option>Reduced Immunity</option>
+                                <option>None Of The Above</option>
                             </select>
                         </div>
                     </div>

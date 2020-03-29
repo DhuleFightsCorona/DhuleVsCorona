@@ -18,8 +18,8 @@
             </div>
             <h2 class="h1">Form Sumbitted</h2>
             <div class="lead mb-4">Thanks for filling form! 🙏 You’ll receieve an notification.Please Share this form.</div>
-            <a class="btn btn-primary btn-lg" href="/f">Fill Other Member Details</a>
-            <a class="btn btn-primary btn-lg" href="#">Share</a>
+            <a class="btn btn-primary btn-sm" href="/f">Fill Other Member Details</a>
+            <a class="btn btn-primary btn-sm" href="#">Share</a>
           </div>
         </div>
       </div>

@@ -31,7 +31,7 @@
         <div class="row justify-content-center">
           <div class="col col-md-auto text-center">
             <div>Developed by <a target='_blank' href="https://pushpak1300.github.io">Dhule Fights Corona Team</a></div>
-            <small class="text-muted text-white">&copy;2020 DhuleFightsCorona  and <a href="#" target="_blank">Privacy Policy</a>
+            <small class="text-muted text-white">&copy;2020 DhuleFightsCorona  and <a href="/pp" target="_blank">Privacy Policy</a>
             </small>
             
           </div>

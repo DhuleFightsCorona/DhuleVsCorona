@@ -19,3 +19,4 @@ Route::get('/news','HomeController@news');
 Route::get('/helpline','HomeController@helpline');
 Route::get('/cluster','HomeController@cluster');
 Route::get('/faq','HomeController@faq');
+Route::get('/pp','HomeController@policy');

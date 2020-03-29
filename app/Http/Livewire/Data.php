@@ -25,17 +25,17 @@ class Data extends Component
         $this->emit('validated', $this->is_validated);
        
     }
-    public function updated($field)
-    {
-        $this->validateOnly($field, [
-        'name' => 'required|max:25',
-        'mobile' => 'required|digits:10',
-        'adress' => 'required|max:200',
-        'pregnent_count' => 'required|lt:10|integer',
-        'newborn_count' => 'required|lt:10|integer',
-        'family_count' => 'required|between:1,10|integer',
-        ]);
-    }
+    // public function updated($field)
+    // {
+    //     $this->validateOnly($field, [
+    //     'name' => 'required|max:25',
+    //     'mobile' => 'required|digits:10',
+    //     'adress' => 'required|max:200',
+    //     'pregnent_count' => 'required|lt:10|integer',
+    //     'newborn_count' => 'required|lt:10|integer',
+    //     'family_count' => 'required|between:1,10|integer',
+    //     ]);
+    // }
 
     public function render()
     {

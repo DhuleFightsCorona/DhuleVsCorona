@@ -36,18 +36,18 @@ class DataRequest extends FormRequest
         'weight' => 'nullable|max:30|string',
         'height' => 'nullable|max:30|string',
         'is_physically_challenged' => 'required',
-        'medicine' => 'nullable|string|max:50',
-        'allergy' => 'nullable|string|max:50',
-        'insulin' => 'nullable|string|max:50',
+        'medicine' => 'nullable|string|max:100',
+        'allergy' => 'nullable|string|max:100',
+        'insulin' => 'nullable|string|max:100',
         'age' => 'required|integer|between:1,100',
-        'gender' => 'required|string|max:50',
-        'temp' => 'required|string|max:50',
-        'symptoms.*' => 'nullable|string|max:50',
+        'gender' => 'required|string|max:100',
+        'temp' => 'required|string|max:100',
+        'symptoms.*' => 'nullable|string|max:100',
         'symptoms_details' => 'nullable|string|max:200',
-        'exposure.*' => 'nullable|string|max:50',
+        'exposure.*' => 'nullable|string|max:100',
         'symptoms_condition' => 'required|string',
-        'medical_condition.*' => 'nullable|string|max:50',
-        'travel.*' => 'nullable|string|max:50'
+        'medical_condition.*' => 'nullable|string|max:100',
+        'travel.*' => 'nullable|string|max:100'
         ];
     }
     /**
@@ -72,18 +72,18 @@ class DataRequest extends FormRequest
             'operative_history.max'  => 'Operation History should not exceed 100 Characters.',            
             'is_physically_challenged.required'  => 'Please mention if you are Physically Challenged.',
             'medicine.required'  => 'Please mention your Medicines.',
-            'medicine.max'  => 'Medicines details should not exceed 50 Characters.',
+            'medicine.max'  => 'Medicines details should not exceed 100 Characters.',
             'insulin.required'  => 'Please mention your Insulin intake.',
-            'insulin.max'  => 'Insulin details should not exceed 50 Characters.',
+            'insulin.max'  => 'Insulin details should not exceed 100 Characters.',
             'weight.max'  => 'Weight should not exceed 30 Characters.',
             'height.max'  => 'Height should not exceed 30 Characters.',
             'age.required'  => 'Please mention your Age.',
             'gender.required'  => 'Please mention your Gender.',
             'temp.required'  => 'Please mention your Body Temperature (in Degree Celsius).',
-            'symptoms.max'  => 'Symptoms should not exceed over 50 Characters.',
+            'symptoms.max'  => 'Symptoms should not exceed over 100 Characters.',
             'symptoms.required'  => 'Please mention your Symptoms you are facing.',
             'exposure.required'  => 'Please mention your Travel Exposure Details.',
-            'exposure.required'  => 'Travel Exposure Details should not exceed over 50 Characters.',
+            'exposure.required'  => 'Travel Exposure Details should not exceed over 100 Characters.',
             
         ];
     }

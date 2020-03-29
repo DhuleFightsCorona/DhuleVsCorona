@@ -7,13 +7,11 @@
           </div>
           <div class="col-lg-12">
             <div class="card card-body" style="border:0px solid"> 
-                  <div class="d-flex">
-                    <div class="h3" style="margin:0px;">India Covid-19 Tracker</div><br>
-                        <h6 class="ml-auto">Last Updated </h6>
+                  <div class="d-flex justify-content-center">
+                    <div class="h3 justify-content-center" style="margin:0px;">India Covid-19 Tracker</div><br>
                   </div>
-                  <div class='flex-grow-1 d-flex'>
-                      <div class="text-sm">Powerd by COVID-19 org</div>
-                       <h6 class='text-sm ml-auto'> {{$last_updated}}</h6>
+                  <div class='flex-grow-1 d-flex justify-content-center'>
+                      <div class="text-sm">Last Updated {{$last_updated}}</div>
                   </div>
                     <div class="row text-center mx-1">
                         <div class="col-6 col-lg-3 ">
