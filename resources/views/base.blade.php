@@ -6,8 +6,7 @@
 
      @livewireStyles
 
-    @stack('header')
-    
+    @stack('header')    
   </head>
 
   <body>
@@ -46,7 +45,7 @@
     });
 </script>
       
-    
+    @laravelPWA
 
     @stack('script')
   </body>
