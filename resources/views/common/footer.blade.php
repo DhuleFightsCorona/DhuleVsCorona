@@ -4,7 +4,7 @@
           <div class="col">
             <div class="card card-body border-0 o-hidden  bg-primary text-light">
               <div class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
-                <div class="h3 text-center mb-md-0">Contribute To Chief Minister's Relief Fund</div>
+                <div class="h3 text-center mb-md-0">Contribute To Prime Minister's Relief Fund</div>
                 <a href="https://gpay.app.goo.gl/cVF8f6" target='_blank' class="btn btn-lg btn-white">
       Donate Now
     </a>
