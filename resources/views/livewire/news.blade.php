@@ -1,4 +1,4 @@
-<div>
+<div class='news-a'>
 <section class="bg-primary-alt" style="padding:1rem">
       <div class="container">
         <div class="row ">

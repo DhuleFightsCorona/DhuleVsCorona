@@ -35,14 +35,3 @@
     </section>
 @endsection
 
-@push('script')
-    
-  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-<script>
-    Weglot.initialize({
-        api_key: 'wg_fbec8ceecab86b90331b9aa9f2730f846'
-    });
-</script>
-      
-    
-@endpush
