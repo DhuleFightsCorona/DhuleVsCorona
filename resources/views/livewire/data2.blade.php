@@ -1,10 +1,11 @@
  <div id="step-2" class=" @if($steps==1) active @endif tab-pane step-content text-center" style="">
                   <div class="p-4 bg-primary-alt">
                     <div class="col-xl-12 col-lg-12 text-center">
-                    <h2>Health Details</h2>
+                    <h2  id='change10'>Health Details</h2>
                         <div class="form-group">
-                            <select class="form-control" wire:model='blood_group' name="blood_group">
-                                <option selected>Select Blood Group *</option>
+                            <label id='change11'>Select Blood Group</label>
+                            <select wire:ignore class="form-control" wire:model='blood_group' name="blood_group">
+                                <option  selected>Select Blood Group *</option>
                                 <option value="A+" >A+</option>
                                 <option value="A-">A-</option>
                                 <option value="B+" >B+</option>
@@ -15,13 +16,13 @@
                                 <option value="O-" >O-</option>
                                 <option value="dk" >Don't Know</option>
                             </select>
-                             @error('blood_group') <div class="text-danger">{{ $message }}</div> @enderror
+                             @error('blood_group') <div class="text-danger" id='change12'>{{ $message }}</div> @enderror
                             </div>
                             <div class="custom-control custom-checkbox mb-3 text-center">
                 <input  type="checkbox" class="custom-control-input" id="customCheck4">
-                <label class="custom-control-label" for="customCheck4">Are You Ready To Donate Blood?</label>
+                <label class="custom-control-label" for="customCheck4" id='change13'>Are You Ready To Donate Blood?</label>
             </div>
-                            <div class="row">
+                            <div class="row" id='change14'>
                                 <div class="col-lg-4">
                                     <div class="form-group">
                                         <label for="weight">Weight (in Kgs) *</label>
@@ -35,14 +36,14 @@
                                         <label for="height">Height (in cm) *:</label>
                             <input wire:model='height' type="number" class="form-control" id="height" name='height' {{old('height')}} aria-describedby="height"
                                 placeholder="0">
-                                 @error('height') <div class="text-danger">{{ $message }}</div> @enderror
+                                 @error('height') <div class="text-danger" id='change17'>{{ $message }}</div> @enderror
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                            <label for="age">Age *</label>
+                            <label for="age" >Age *</label>
                             <input wire:model='age' type="number" class="form-control" id="age" name='age' {{old('age')}} aria-describedby="age" placeholder="0">
-                                         @error('age') <div class="text-danger">{{ $message }}</div> @enderror
+                                         @error('age') <div class="text-danger" >{{ $message }}</div> @enderror
                                     </div>
                                 </div>
 
@@ -55,36 +56,36 @@
             <div class="row text-center">
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label>Gender *</label>
-                       <select class="form-control" wire:model='gender' name="gender">
+                        <label id='change15'>Gender *</label>
+                       <select wire:ignore class="form-control" wire:model='gender' name="gender">
                                 <option selected>Select Gender</option>
                                 <option value="male" >Male</option>
                                 <option value="female">Female</option>
                                 <option value="other" >Other</option>
                                 
                             </select>
-                             @error('gender') <div class="text-danger">{{ $message }}</div> @enderror
+                             @error('gender') <div class="text-danger" id='change16'>{{ $message }}</div> @enderror
                     </div>
                 </div>
 
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label>Are you physically challenged?*</label>
-                        <select class="form-control" wire:model='is_physically_challenged' name="is_physically_challenged">
+                        <label id='change17'>Are you physically challenged?*</label>
+                        <select wire:ignore class="form-control" wire:model='is_physically_challenged' name="is_physically_challenged">
                             <option selected>Select</option>    
                             <option value="0">No</option>
                                 <option value="1">Yes</option>
                                 
                             </select>
-                             @error('is_physically_challenged') <div class="text-danger">{{ $message }}</div> @enderror
+                             @error('is_physically_challenged') <div class="text-danger" id='change18'>{{ $message }}</div> @enderror
                     </div>
                 </div>
 
 
             </div>
             <div class="form-group text-center">
-                <label>Are you experiencing any of the symptoms below(mark all those applicable)</label>
-                <select class="form-control" name="symptoms[]" multiple>
+                <label id='change19'>Are you experiencing any of the symptoms below(mark all those applicable)</label>
+                <select wire:ignore  class="form-control" name="symptoms[]" multiple>
                     <option>Dry cough</option>
                     <option>Sneezing</option>
                     <option>Sore Throat</option>
@@ -97,13 +98,13 @@
                     <option>None Of The Above</option>
                 </select>
             </div>
-            <div class="form-group text-center">
+            <div class="form-group text-center" id='change20'>
                 <label for="sym2">Symptoms which are not listed above(specify if any)</label>
                 <input wire:model='symptoms_details' type="text" class="form-control" id="sym2" aria-describedby="sym2" name='symptoms_details' placeholder="Symptoms">
                  @error('symptoms_details') <div class="text-danger">{{ $message }}</div> @enderror
             </div>
 
-            <div class="form-group text-center">
+            <div class="form-group text-center" id='change21'>
                 <div data-children-count="1">
                     <label for="temp">Approximate Body temperature(in C)*</label>
                 <input wire:model='temp' type="range" class="custom-range" id="temp" name="temp" min="97" max="105" value="@if(old('temp')) {{old('temp')}} @else 99 @endif">
@@ -122,8 +123,8 @@
                 </div>
             </div>
             <div class="form-group text-center">
-                <label for="trav">Please select your travel and exposure details:</label>
-                <select class="form-control" name='exposure[]'>
+                <label for="trav" id='change22'>Please select your travel and exposure details:</label>
+                <select wire:ignore class="form-control" name='exposure[]'>
                     <option value="1" selected>No contact with anyone with Symptoms</option>
                     <option value="2">History of travel or meeting in affected geographical area in last 14
                         days</option>
@@ -134,8 +135,8 @@
             <div class="row text-center">
                 <div class="col-lg-6">
                     <div class="form-group">
-                        <label>Any Travel History (mark all those applicable)</label>
-                        <select class="form-control" multiple name='travel[]'>
+                        <label id='change23'>Any Travel History (mark all those applicable)</label>
+                        <select wire:ignore class="form-control" multiple name='travel[]'>
                             <option>International</option>
                             <option>Interstate</option>
                             <option>Interdistrict</option>
@@ -143,7 +144,7 @@
                         </select>
                     </div>
                 </div> 
-                <div class="col-lg-6">
+                <div class="col-lg-6" id='change24'>
                     <div class="form-group text-center">
                         <label>How have your symptoms progressed over the last 48 hours ?:</label>
                          @error('symptoms_condition') <div class="text-danger">{{ $message }}</div> @enderror
@@ -171,8 +172,8 @@
             <div class="col-lg-12">
                     <div class="form-group">
                         <div class="form-group">
-                            <label>Are you experiencing any of the symptoms below(mark all those applicable)</label>
-                            <select  wire:model='medical_condition' class="form-control" multiple name='medical_condition[]'>
+                            <label id='change25'>Are you experiencing any of the symptoms below(mark all those applicable)</label>
+                            <select wire:ignore  wire:model='medical_condition' class="form-control" multiple name='medical_condition[]'>
                                 <option>Diabetes</option>
                                 <option>High Blood Pressure</option>
                                 <option>Kidney Disease</option>
@@ -187,11 +188,11 @@
                 </div>
                 <div class="custom-control custom-checkbox mb-3 text-center">
                 <input wire:model='is_medical_history' name='is_medical_history' type="checkbox" class="custom-control-input" id="customCheck3">
-                <label class="custom-control-label" for="customCheck3">Select checkbox if you have any Medical
+                <label class="custom-control-label" for="customCheck3" id='change26'>Select checkbox if you have any Medical
                     history.</label>
             </div>
             @if ($is_medical_history)
-            <div class="row text-center">
+            <div class="row text-center" id='change27'>
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label for="operation">Any Operative History:</label>
@@ -228,11 +229,12 @@
 
             </div>
         
-
+       
             @endif
-
             <button wire:click.prevent='sumbit' class="btn btn-primary text-center">Save</a>
-        </div>
+
+</div>
+        
     </div>
 </div>
 </div>
