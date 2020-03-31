@@ -44,6 +44,7 @@
 <script>
     Weglot.initialize({
         api_key: 'wg_fbec8ceecab86b90331b9aa9f2730f846',
+        dangerously_force_dynamic: ["#change3","#change1","#change2","#change4","#change5","#change6","#change7","#change8","#change9","#change10","#change11","#change12","#change13","#change14","#change15","#change16","#change17","#change18","#change19","#change20","#change21","#change22","#change23","#change24","#change25","#change26","#change27"],
     });
 
 </script>
