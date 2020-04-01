@@ -16,7 +16,7 @@
                         <div class="col-6 col-lg-3 ">
     <div class="card"  style="margin-top:20px;">
       <div class="card-body text-danger"  style="margin-bottom:0rem;">
-        <h5 class="card-title text-danger" style="margin-bottom:1rem;">Confirmed</h5>
+        <h5 class="card-title text-danger" style="margin-bottom:0.25rem;">Confirmed</h5>
       <p class="card-title" style="margin-bottom:0rem;"> <strong>{{$stats['statewise'][0]['confirmed']}}</strong></p>
       </div>
     </div>
@@ -26,7 +26,7 @@
                         <div class="col-6 col-lg-3 ">
     <div class="card"  style="margin-top:20px;">
       <div class="card-body text-primary"  style="margin-bottom:0rem;">
-        <h5 class="card-title text-primary" style="margin-bottom:1rem;">Active</h5>
+        <h5 class="card-title text-primary" style="margin-bottom:0.25rem;">Active</h5>
         <p class="card-title" style="margin-bottom:0rem;"> <strong>{{$stats['statewise'][0]['active']}}</strong></p>
       </div>
     </div>
@@ -36,7 +36,7 @@
                         <div class="col-6 col-lg-3 ">
     <div class="card"  style="margin-top:20px;">
       <div class="card-body text-success"  style="margin-bottom:0rem;">
-        <h5 class="card-title text-success" style="margin-bottom:1rem;">Recovered</h5>
+        <h5 class="card-title text-success" style="margin-bottom:0.25rem;">Recovered</h5>
         <p class="card-title" style="margin-bottom:0rem;"> <strong>{{$stats['statewise'][0]['recovered']}}</strong></p>
       </div>
     </div>
@@ -46,7 +46,7 @@
                         <div class="col-6 col-lg-3 ">
     <div class="card"  style="margin-top:20px;">
       <div class="card-body text-muted"  style="margin-bottom:0rem;">
-        <h5 class="card-title text-muted" style="margin-bottom:1rem;">Death</h5>
+        <h5 class="card-title text-muted" style="margin-bottom:0.25rem;">Death</h5>
         <p class="card-title" style="margin-bottom:0rem;"> <strong>{{$stats['statewise'][0]['deaths']}}</strong></p>
       </div>
     </div>
@@ -70,8 +70,8 @@
                         <div class="col-6 col-lg-3 ">
     <div class="card"  style="margin-top:20px;">
       <div class="card-body text-danger"  style="margin-bottom:0rem;">
-        <h5 class="card-title text-danger" style="margin-bottom:1rem;">Confirmed</h5>
-      <p class="card-title" style="margin-bottom:0rem;"> <strong>{{$stats['statewise'][1]['confirmed']}}</strong></p>
+        <h5 class="card-title text-danger" style="margin-bottom:0.25rem;">Confirmed</h5>
+      <p class="card-title" style="margin-bottom:0rem;"> <strong>{{$stats['statewise'][22]['confirmed']}}</strong></p>
       </div>
     </div>
   
@@ -80,8 +80,8 @@
                         <div class="col-6 col-lg-3 ">
     <div class="card"  style="margin-top:20px;">
       <div class="card-body text-primary"  style="margin-bottom:0rem;">
-        <h5 class="card-title text-primary" style="margin-bottom:1rem;">Active</h5>
-        <p class="card-title" style="margin-bottom:0rem;"> <strong>{{$stats['statewise'][1]['active']}}</strong></p>
+        <h5 class="card-title text-primary" style="margin-bottom:0.25rem;">Active</h5>
+        <p class="card-title" style="margin-bottom:0rem;"> <strong>{{$stats['statewise'][22]['active']}}</strong></p>
       </div>
     </div>
   
@@ -90,8 +90,8 @@
                         <div class="col-6 col-lg-3 ">
     <div class="card"  style="margin-top:20px;">
       <div class="card-body text-success"  style="margin-bottom:0rem;">
-        <h5 class="card-title text-success" style="margin-bottom:1rem;">Recovered</h5>
-        <p class="card-title" style="margin-bottom:0rem;"> <strong>{{$stats['statewise'][1]['recovered']}}</strong></p>
+        <h5 class="card-title text-success" style="margin-bottom:0.25rem;">Recovered</h5>
+        <p class="card-title" style="margin-bottom:0rem;"> <strong>{{$stats['statewise'][22]['recovered']}}</strong></p>
       </div>
     </div>
   
@@ -100,8 +100,8 @@
                         <div class="col-6 col-lg-3 ">
     <div class="card"  style="margin-top:20px;">
       <div class="card-body text-muted"  style="margin-bottom:0rem;">
-        <h5 class="card-title text-muted" style="margin-bottom:1rem;">Death</h5>
-        <p class="card-title" style="margin-bottom:0rem;"> <strong>{{$stats['statewise'][1]['deaths']}}</strong></p>
+        <h5 class="card-title text-muted" style="margin-bottom:0.25rem;">Death</h5>
+        <p class="card-title" style="margin-bottom:0rem;"> <strong>{{$stats['statewise'][22]['deaths']}}</strong></p>
       </div>
     </div>
   
@@ -110,11 +110,11 @@
                         
                     </div>
                   </div>
+ </div>
+</div>
 
-      <div class="col-lg-12">@livewire('bored')</div>
-                  
-</div>
-</div>
+
+    
 
           
         
