@@ -18,7 +18,7 @@ class Stats extends Component
             $this->stats=$stats->json();
         }
         $this->last_updated=Carbon::parse(Str::replaceArray('/', ['-','-'],$stats['statewise'][0]['lastupdatedtime']),'Asia/Kolkata')->diffForHumans();
-        $this->last_updated_maharashtra=Carbon::parse(Str::replaceArray('/', ['-','-'],$stats['statewise'][22]['lastupdatedtime']),'Asia/Kolkata')->diffForHumans();
+        $this->last_updated_maharashtra=Carbon::parse(Str::replaceArray('/', ['-','-'],$stats['statewise'][1]['lastupdatedtime']),'Asia/Kolkata')->diffForHumans();
     }
     public function render()
     {
