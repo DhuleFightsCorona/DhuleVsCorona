@@ -1,7 +1,7 @@
 <!-- Required vendor scripts (Do not remove) -->
-    <script type="text/javascript" src="{{asset('assets/js/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets/js/popper.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets/js/bootstrap.js')}}"></script>    
+    <script type="text/javascript" src="{{asset('assets/js/jquery.min.js')}}" defer></script>
+    <script type="text/javascript" src="{{asset('assets/js/popper.min.js')}}" defer></script>
+    <script type="text/javascript" src="{{asset('assets/js/bootstrap.js')}}" defer></script>    
 
     <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 
@@ -42,6 +42,6 @@
     <script type="text/javascript" src="template/assets/js/typed.min.js'}}"></script> --}}
     <!-- Required theme scripts (Do not remove) -->
     {{-- <script type="text/javascript" src="{{asset('assets/js/svg-injector.umd.production.js')}}"></script> --}}
-    <script type="text/javascript" src="{{asset('assets/js/jquery.smartWizard.min.js')}}"></script>
-    <script src="{{asset('js/all.js') }}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/jquery.smartWizard.min.js')}}" defer></script>
+    <script src="{{asset('js/all.js') }}" defer></script>
 

@@ -1,4 +1,4 @@
-<div class="card text-center">
+<div class="card text-center" style="margin-bottom:1rem;">
 
   <div class="card-body">
     <h5 class="card-title">Bored In Qurantine</h5>

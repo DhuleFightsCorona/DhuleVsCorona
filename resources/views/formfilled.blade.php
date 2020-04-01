@@ -19,7 +19,7 @@
             <h2 class="h1">Form Sumbitted</h2>
             <div class="lead mb-4">Thanks for filling form! 🙏 You’ll receieve an notification.Please Share this form.</div>
             <a class="btn btn-primary btn-sm" href="/f">Fill Other Member Details</a>
-            <a class="btn btn-primary btn-sm" href="#" onclick="shareurl()">Share</a>
+            <a class="btn btn-primary btn-sm"  id="share">Share</a>
           </div>
         </div>
       </div>
@@ -28,13 +28,16 @@
 
 @push('script')
     <script>
-      function shareurl() {
-       navigator.share({
+      const btn = document.querySelector('#share');
+      btn.addEventListener('click', async () => {
+  try {
+    await navigator.share({
       title: 'Dhule Fights Corona',
       text: 'dhulekar are ready to fight',
       url: 'https://dhulefightscorona.com',
-    }).then(() => console.log('Successful share'))
-      .catch((error) => console.log('Error sharing', error));
-      }
-    </script>
+    });
+  } catch(err) {
+    console.log(err);
+    }
+    });</script>
 @endpush

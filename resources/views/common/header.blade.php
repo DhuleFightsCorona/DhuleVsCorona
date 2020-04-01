@@ -35,4 +35,13 @@
     margin-bottom: auto;
     margin-top: .25rem;
 }
+.title {
+  font-size: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: calc(1.525rem + 3.3vw);
+  }
+}
     </style>
