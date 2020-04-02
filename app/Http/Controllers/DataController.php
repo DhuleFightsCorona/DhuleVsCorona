@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\DataRequest;
 use App\User; 
 use App\Information; 
+use App\Http\Requests\FamilymemberRequest;
 
 class DataController extends Controller
 {
@@ -61,6 +62,7 @@ class DataController extends Controller
         $user->fill(['is_fully_registered' => 1]);
         $user->save();
         // dd($request->all(),$user->get(),$data,$information);
+        session(['data' => $data->id]);
         return view('formfilled');
     }
 
@@ -107,5 +109,30 @@ class DataController extends Controller
     public function destroy(Data $data)
     {
         //
+    }
+
+    public function familyformview(Request $request)
+    {
+        if ($request->session()->has('data')) {
+            $value = session('data');
+        }
+        return view('familyform');
+    }
+    public function familyform(FamilymemberRequest $request)
+    {
+        // dd($request->all());
+        if ($request->session()->has('data')) {
+            $request['data_id'] = session('data');
+            $request['symptoms']= serialize($request->symptoms);
+            $request['exposure']=serialize($request->exposure);
+            $request['travel']=serialize($request->travel);
+            $request['medical_condition']=serialize($request->medical_condition);
+            $information = Information::create($request->all());
+            // dd($request->all(),$information);
+            session(['data' => session('data')]);
+            return view('formfilled');
+        }
+        abort(500);
+        
     }
 }
