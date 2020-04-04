@@ -135,4 +135,10 @@ class DataController extends Controller
         abort(500);
         
     }
+
+    public function smallform()
+    {
+        return view('smallform');
+        dd($request->all());
+    }
 }
