@@ -13,7 +13,7 @@
 
                 @foreach ($stats['districtData'] as $dis => $district)
                <tr>
-                  <td><strong class="text-gray float-left">{{"Pune"}}</strong></td>
+                  <td><strong class="text-gray float-left">{{$dis}}</strong></td>
                   <td>
                      @if ($district['delta']['confirmed']!=0)
                      <strong class="text-danger float-left text-center">{{$district['delta']['confirmed']}} +</strong>
