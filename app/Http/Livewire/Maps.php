@@ -16,7 +16,6 @@ class Maps extends Component
             $this->stats=$stats->json();
             $this->stats=$this->stats['Maharashtra'];
         }
-        dd($this->stats['districtData']);
     }
     public function render()
     {
