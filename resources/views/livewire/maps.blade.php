@@ -11,7 +11,7 @@
             </thead>
             <tbody>
 
-               @foreach ($stats['districtData'] as $district)
+               {{-- @foreach ($stats['districtData'] as $district)
                <tr>
                   <td><strong class="text-gray float-left">{{"Pune"}}</strong></td>
                   <td>
@@ -23,7 +23,7 @@
                   </td>
 
                </tr>
-               @endforeach
+               @endforeach --}}
 
             </tbody>
          </table>
