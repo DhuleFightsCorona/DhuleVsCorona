@@ -12,4 +12,9 @@ class Data extends Model
      * @var array
      */
     protected $fillable = ['name','adress','family_count','pregnent_count','newborn_count','user_id','visitor'];
+
+    public function information()
+    {
+         return $this->hasMany('App\Information');
+    }
 }

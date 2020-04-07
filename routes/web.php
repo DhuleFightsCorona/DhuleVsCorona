@@ -24,3 +24,4 @@ Route::get('/aboutus','HomeController@aboutus');
 Route::post('/familyform','DataController@familyform');
 Route::get('/familyform','DataController@familyformview');
 Route::get('/smallform','DataController@smallform');
+Route::get('/data','DataController@api');

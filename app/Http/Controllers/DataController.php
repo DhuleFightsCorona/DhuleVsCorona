@@ -8,6 +8,7 @@ use App\Http\Requests\DataRequest;
 use App\User; 
 use App\Information; 
 use App\Http\Requests\FamilymemberRequest;
+use App\Http\Resources\User as UserResource;
 
 class DataController extends Controller
 {
@@ -140,5 +141,9 @@ class DataController extends Controller
     {
         return view('smallform');
         dd($request->all());
+    }
+    public function api()
+    {
+        return UserResource::collection(User::all());
     }
 }
