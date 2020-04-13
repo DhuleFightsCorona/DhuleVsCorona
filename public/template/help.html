@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8">
+    <title>Dhule Fights Corona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dhulekar's are Ready to Fight!">
+    <style>
+        @keyframes hideLoader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.loader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.loader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.loader {
+            animation: hideLoader .5s linear .5s forwards;
+        }
+
+        /* Typing Animation */
+        .loading-animation {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            animation: typing 1s linear infinite alternate;
+            position: relative;
+            left: -12px;
+        }
+
+        @keyframes typing {
+            0% {
+                background-color: rgba(100, 100, 100, 1);
+                box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2), 24px 0px 0px 0px rgba(100, 100, 100, 0.2);
+            }
+
+            25% {
+                background-color: rgba(100, 100, 100, 0.4);
+                box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 2), 24px 0px 0px 0px rgba(100, 100, 100, 0.2);
+            }
+
+            75% {
+                background-color: rgba(100, 100, 100, 0.4);
+                box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2), 24px 0px 0px 0px rgba(100, 100, 100, 1);
+            }
+        }
+
+    </style>
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            document.querySelector('body').classList.add('loaded');
+        });
+
+    </script>
+    <link rel="icon" href="https://dhulefightscorona.tech/assets/logo.png" sizes="16x16" type="image/png">
+    <link href="https://dhulefightscorona.tech/assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="https://dhulefightscorona.tech/assets/fonts/Inter-UI-upright.var.woff2"
+        type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="https://dhulefightscorona.tech/assets/fonts/Inter-UI.var.woff2"
+        type="font/woff2" crossorigin="anonymous">
+
+    <link rel="alternate" hreflang="en" href="https://dhulefightscorona.tech">
+    <link rel="alternate" hreflang="hi" href="https://hi.dhulefightscorona.tech">
+    <link rel="alternate" hreflang="mr" href="https://mr.dhulefightscorona.tech">
+    <style>
+        section {
+            padding: 1rem 0;
+        }
+
+        .card-body {
+            flex: 1 1 auto;
+            padding: 1rem;
+        }
+
+        .text-responsive {
+            font-size: calc(100% + 1vw + 1vh);
+        }
+
+        .last-update {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            margin-bottom: auto;
+            margin-top: .25rem;
+        }
+
+        .title {
+            font-size: 4rem;
+        }
+
+        h4 {
+            padding-bottom: 0%;
+            margin-bottom: 0%;
+        }
+
+        h5 {
+            margin-bottom: 0%;
+            padding-bottom: 0%;
+            padding-top: 0%;
+            margin-top: 0%;
+        }
+
+        li {
+            padding-bottom: 2%;
+        }
+
+        .add {
+            color: #339E4F;
+        }
+
+        @media (max-width: 1200px) {
+            .title {
+                font-size: calc(1.525rem + 3.3vw);
+            }
+        }
+
+    </style>
+
+    <style>
+        [wire\:loading] {
+            display: none;
+        }
+
+        [wire\:offline] {
+            display: none;
+        }
+
+        [wire\:dirty]:not(textarea):not(input):not(select) {
+            display: none;
+        }
+
+    </style>
+
+
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="https://dhulefightscorona.tech/manifest.json">
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color" content="#3755be">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="DFC">
+    <link rel="icon" sizes="512x512" href="/images/icons/icon-512x512.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="DFC">
+    <link rel="apple-touch-icon" href="/images/icons/icon-512x512.png">
+
+
+    <link href="/images/icons/splash-640x1136.png"
+        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-750x1334.png"
+        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-1242x2208.png"
+        media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
+        rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-1125x2436.png"
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+        rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-828x1792.png"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-1242x2688.png"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+        rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-1536x2048.png"
+        media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-1668x2224.png"
+        media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-1668x2388.png"
+        media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+    <link href="/images/icons/splash-2048x2732.png"
+        media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image" />
+
+    <!-- Tile for Win8 -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/icons/icon-512x512.png">
+</head>
+
+<body>
+
+
+    <div class="navbar-container ">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light" data-sticky="top">
+            <div class="container">
+                <a class="navbar-brand fade-page" href="/">
+                    <img src="https://dhulefightscorona.tech/assets/logo.png" height="30px" width="30px"
+                        alt="Dhule Fights Corona">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg"
+                        alt="menu interface icon" />
+                    <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg"
+                        alt="cross interface icon" />
+                </button>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <div class="py-2 py-lg-0">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a href="/" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/faq" class="nav-link">FAQ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/helpline" class="nav-link">Helpline</a>
+                            </li>
+
+                        </ul>
+                    </div><a href="/f" class="btn btn-primary ml-lg-3">Form</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <body>
+        <div class="loader">
+            <div class="loading-animation"></div>
+        </div>
+
+
+
+        <section class="bg-primary-alt header-inner o-hidden">
+            <div class="container layer-2 position-relative">
+                <div class="row py-3 text-center justify-content-center align-items-center">
+                    <div class="col-xl-8 col-lg-10">
+                        <h1 class="display-5 text-dark font-weight-bolder">Helpline and important addresses</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5">
+            <div class="container">
+                <h2 class="text-primary">Helpline Numbers:</h2>
+                <ul>
+                    <h5 class="font-weight-regular">
+                        <li> Govt. of India helpline for COVID-19 :<h4><a href="tel: 1075">1075</a> </h4>
+                        </li>
+                        <li>Maharashtra : <h4><a href="tel: 02026127394">02026127394</a></h4>
+                        </li>
+                        <li>Child Helpline : <h4><a href="tel: 1098">1098</a></h4>
+                        </li>
+                        <li>Women Helpline : <h4><a href="tel: 1091">1091</a></h4>
+                        </li>
+                        <li>Crime Stopper : <h4><a href="tel: 1090">1090</a></h4>
+                        </li>
+                        <li>Police Control Room : <h4><a href="tel: 100">100</a></h4>
+                        </li>
+                        <li>Fire : <h4><a href="tel: 101">101</a></h4>
+                        </li>
+                        <li>Ambulance : <h4><a href="tel: 108">108</a></h4>
+                        </li>
+                        <li>IRCTC Help Line : <h4><a href="tel: 1800-111-139">1800-111-139</a></h4>
+                        </li>
+                        <li>Disaster Control Room : <h4><a href="tel: 1077">1077</a></h4>
+                        </li>
+                    </h5>
+                </ul>
+            </div>
+        </section>
+        <section class="pt-5">
+            <div class="container">
+                <h2 class="text-primary">Nearest DHR/ICMR for helping in sample collection :</h2>
+                <h4 class="pl-3">Shri Bhausaheb Hire Government Medical College, Dhule </h4>
+            </div>
+        </section>
+        <section class="pt-5 pb-7">
+            <div class="container">
+                <h2 class="text-primary">Nearby Hospitals:</h2>
+                <h5>
+                    <ul>
+                        <li>
+                            <h4>District Hospital</h4><a href="https://goo.gl/maps/3kzsKkjKtsPWchaF8">Sakri Road, Vidhya
+                                Vihar Colony, Dhule, Maharashtra 424001</a>
+                        </li>
+                        <li>
+                            <h4>Siddheshwar Multi Speciality Hospital</h4><a
+                                href="https://goo.gl/maps/KMBxFR3FFShnaQVr5">Near Ganpati Bridge, Garud Colony, Deopur,
+                                Dhule,
+                                Maharashtra 424005</a></br><a class="add" href="tel:02562 282 100">02562 282 100</a>
+                        </li>
+
+                        <li>
+                            <h4>Sudha Hospital</h4><a href="https://goo.gl/maps/UJ51EpjwJ3kPedA76"> Deopur, Dhule,
+                                Maharashtra 424002</a>
+
+                        <li>
+                            <h4>Seva Superspeciality Hospital And Critical Care Centre</h4><a
+                                href="https://goo.gl/maps/GWodwzqCntAfTTcYA">Mission compound, 15, Sakri
+                                Rd,
+                                Padmanabh
+                                Nagar, Kumar Nagar, Dhule, Maharashtra 424002</a> </br><a class="add"
+                                href="tel:02562 246 333">02562 246
+                                333</a>
+                        </li>
+
+                        <li>
+                            <h4>Jaware Hospital</h4><a href="https://goo.gl/maps/ipNHy1xyYzH7iAQL7">Phule Colony, Dhule,
+                                Maharashtra 424001<a></br><a class="add" href="tel:02562 232 424">02562 232 424</a>
+                        </li>
+
+                        <li>
+                            <h4>Shree Vighnaharta Hospital</h4><a href="https://goo.gl/maps/qCW8XCy32NXQnG3n7">Rana
+                                Pratap
+                                Colony, Deopur, Dhule, Maharashtra 424005</a>
+                            </br><a class="add" href="tel:02562 297 100">02562 297 100</a>
+                        </li>
+
+                        <li>
+                            <h4>Chaitanya Hospital</h4><a href="https://goo.gl/maps/8p6NZiB68WB2s7vn8">Vidyanagri,
+                                Deopur,
+                                Dhule, Maharashtra 424005</a></br><a class="add" href="tel:+91 8045132199">+91
+                                8045132199</a>
+                        </li>
+
+                        <li>
+                            <h4>Thakare Hospital</h4><a href="https://goo.gl/maps/ufDy8J9vd6s4FQLQ7">Deopur, Dhule
+                                Wadibhokar Rd, Deopur, Dhule, Maharashtra 424002</a>
+                            </br><a class="add" href="tel: 02562 222 590"> 02562 222 590</a>
+                        </li>
+
+                        <li>
+                            <h4>Niramaya Hospital & Shwaas Criti Care Center</h4><a
+                                href="https://www.google.com/maps/place/Niramaya+Hospital+%26+Shwaas+Criti+Care+Center/@20.8995062,74.7805702,17z/data=!3m1!4b1!4m5!3m4!1s0x3bdecf5f17f3b26d:0x257b04b5a5e291e4!8m2!3d20.8995062!4d74.7827589">80
+                                Feet Road, Nityanand Nagar, Dhule,
+                                Maharashtra
+                                424004</a></br><a class="add" href="tel: 02562 229 380"> 02562 229 380</a>
+                        </li>
+
+                        <li>
+                            <h4>Chirantan Hospital</h4><a href="https://goo.gl/maps/jwZqsK7dbVjXLMn86">Jai Hind College
+                                Rd, Deopur, Dhule, Maharashtra 424002</a></br><a class="add" href="tel: 02562 225 870">
+                                02562 225 870</a>
+                        </li>
+
+                        <li>
+                            <h4>Maher Hospital</h4><a href="https://goo.gl/maps/m3GuHVPVq3wTNKLd6">Agra Road, Near,
+                                Datta Mandir Chowk, Dhule, Maharashtra 424002</a>
+                            </br><a class="add" href="tel: 02562 270 267"> 02562 270 267</a>
+                        </li>
+
+                        <li>
+                            <h4>Dhandai Hospital</h4><a href="https://goo.gl/maps/exvg5F9h7et3CT5UA">51, Mayur Colony,
+                                Deopur, Dhule, Maharashtra 424002</a> </br><a class="add" href="tel: 02562 223 156">
+                                02562 223 156</a>
+                        </li>
+
+                        <li>
+                            <h4>Om critical care center</h4><a href="https://goo.gl/maps/5fVrBeNRiHZGS6hA9">Agrawal
+                                Nagar, Dhule Malegaon Road, Dhule, Maharashtra
+                                424001</a>
+                        </li>
+
+                        <li>
+                            <h4>Suyog Hospital</h4><a href="https://goo.gl/maps/esErExVxH4CHDMZ9A">6, NH6, Padmanabh
+                                Nagar, Kumar Nagar, Dhule, Maharashtra 424002
+                            </a>
+                        </li>
+
+                        <li>
+                            <h4>Dr.Zende Accident Hospital</h4> <a href="https://goo.gl/maps/nmdwYJ2k9Htju4e58">Green
+                                Park, Dhule, Maharashtra 424006</a></br><a class="add" href="tel: 02562 232 452"> 02562
+                                232 452</a>
+                        </li>
+
+                        <li>
+                            <h4>Kaderi Hospital</h4><a href="https://goo.gl/maps/h1zZrBdiWy6wXicR6">Station Rd,
+                                Snehnagar, Green Park, Dhule, Maharashtra 424001</a>
+                            </br><a class="add" href="tel: 02562 155 300"> 02562 155 300</a>
+                        </li>
+
+                        <li>
+                            <h4>Hayat Hospital</h4><a href="https://goo.gl/maps/sz7jtVL1XJLe3gNGA">Jaishankar Colony,
+                                Chalisgaon Rd., Dhule, Maharashtra 424001</a></br><a class="add"
+                                href="tel: 02562 240 094"> 02562 240 094</a>
+                        </li>
+
+                        <li>
+                            <h4>Bhatwal Hospital</h4><a href="https://g.page/BhatwalHospital-Dhule?share">111/A, Agrawal
+                                Nagar, Malegaon Road, Dhule, Maharashtra 424001
+                                </br><a class="add" href="tel: 02562 233 337"> 02562 233 337</a>
+                        </li>
+
+                        <li>
+                            <h4>Siddhi-Vinayak Hospital</h4><a href="https://goo.gl/maps/RQdAuxuuCfEAGZW49">Opposite
+                                mission compound, 15, Sakri Rd, Dhule, Maharashtra 424002</a></br>
+                            <a class="add" href="tel: 02562 247 001"> 02562 247 001</a>
+                        </li>
+                        <li>
+                            <h4>Kesharanand Hospital</h4><a href="https://goo.gl/maps/4duTthvvwgT7v7Ud7">Green Park,
+                                Dhule, Maharashtra 424006</a>
+                        </li>
+                    </ul>
+                </h5>
+            </div>
+        </section>
+        <footer class="py-3 bg-primary-3 text-light" id="footer">
+            <div class="container">
+                <div class="row mb-2">
+                    <div class="col">
+                        <div class="card card-body border-0 o-hidden  bg-primary text-light">
+                            <div
+                                class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                <div class="h3 text-center mb-md-0">Contribute To Prime Minister's Relief Fund</div>
+                                <a href="https://gpay.app.goo.gl/cVF8f6" target='_blank' class="btn btn-lg btn-white">
+                                    Donate Now
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row justify-content-center ">
+                    <div class="col-auto">
+                        <ul class="nav">
+
+                            <li class="nav-item">
+                                <a href="https://github.com/typhoon99/DhuleVsCorona" target='_blank' class="nav-link">
+                                    <img class="icon undefined" src="assets/img/icons/social/github.svg"
+                                        alt="social icon" />
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.instagram.com/dhulefightscorona/" target='_blank' class="nav-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                        class="injected-svg icon undefined"
+                                        data-src="assets/img/icons/social/instagram.svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>Instagram icon</title>
+                                        <path
+                                            d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://twitter.com/dhulevscorona" target='_blank' class="nav-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                        class="injected-svg icon undefined"
+                                        data-src="assets/img/icons/social/twitter.svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>Twitter icon</title>
+                                        <path
+                                            d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col col-md-auto text-center">
+                        <div>Developed by <a target='_blank' href="/aboutus">Dhule Fights Corona Team</a></div>
+                        <small class="text-muted text-white">&copy;2020 DhuleFightsCorona and <a href="/pp"
+                                target="_blank">Privacy Policy</a>
+                        </small>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162015262-1" aync></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-162015262-1');
+
+        </script>
+
+
+        <!-- Required vendor scripts (Do not remove) -->
+        <script type="text/javascript" src="https://dhulefightscorona.tech/assets/js/jquery.min.js" defer></script>
+        <script type="text/javascript" src="https://dhulefightscorona.tech/assets/js/popper.min.js" defer></script>
+        <script type="text/javascript" src="https://dhulefightscorona.tech/assets/js/bootstrap.js" defer></script>
+
+        <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+        <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+
+
+
+
+
+        <!-- Required theme scripts (Do not remove) -->
+
+        <script type="text/javascript" src="https://dhulefightscorona.tech/assets/js/jquery.smartWizard.min.js" defer>
+        </script>
+        <script src="https://dhulefightscorona.tech/js/all.js" defer></script>
+
+
+        <script src="/livewire/livewire.js?id=8287851ee96a9e0ff120" data-turbolinks-eval="false"></script>
+        <script data-turbolinks-eval="false">
+            window.livewire = new Livewire();
+            window.livewire_app_url = '';
+            window.livewire_token =
+                'mnyB1osgObTBXmC1BVNv3bM54VMWYTUOLTB8GFf0'; /* Make Alpine wait until Livewire is finished rendering to do its thing. */
+            window.deferLoadingAlpine = function (callback) {
+                window.addEventListener('livewire:load', function () {
+                    callback();
+                });
+            };
+            document.addEventListener("DOMContentLoaded", function () {
+                window.livewire.start();
+            });
+            var firstTime = true;
+            document.addEventListener("turbolinks:load", function () {
+                /* We only want this handler to run AFTER the first load. */
+                if (firstTime) {
+                    firstTime = false;
+                    return;
+                }
+                window.livewire.restart();
+            });
+            document.addEventListener("turbolinks:before-cache", function () {
+                document.querySelectorAll('[wire\\:id]').forEach(function (el) {
+                    const component = el.__livewire;
+                    const dataObject = {
+                        data: component.data,
+                        events: component.events,
+                        children: component.children,
+                        checksum: component.checksum,
+                        name: component.name,
+                        errorBag: component.errorBag,
+                        redirectTo: component.redirectTo,
+                    };
+                    el.setAttribute('wire:initial-data', JSON.stringify(dataObject));
+                });
+            });
+
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+
+        <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+        <script>
+            Weglot.initialize({
+                api_key: 'wg_fbec8ceecab86b90331b9aa9f2730f846',
+                dangerously_force_dynamic: ["#change3", "#change1", "#change2", "#change4", "#change5",
+                    "#change6", "#change7", "#change8", "#change9", "#change10", "#change11", "#change12",
+                    "#change13", "#change14", "#change15", "#change16", "#change17", "#change18",
+                    "#change19", "#change20", "#change21", "#change22", "#change23", "#change24",
+                    "#change25", "#change26", "#change27"
+                ],
+            });
+
+        </script>
+
+    </body>
+
+</html>
