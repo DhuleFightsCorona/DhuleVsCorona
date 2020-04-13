@@ -111,7 +111,7 @@
 
         <div class="form-group text-center" id='change21'>
             <div data-children-count="1">
-                <label for="temp">Do you have Fever?*</label>
+                <label for="temp">Select Fever Range *</label>
                 <input wire:model='temp' type="range" class="custom-range" id="temp" name="temp" min="97" max="105"
                     value="@if(old('temp')) {{old('temp')}} @else 99 @endif">
                 @error('temp') <div class="text-danger">{{ $message }}</div> @enderror

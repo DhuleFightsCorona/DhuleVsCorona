@@ -45,3 +45,4 @@ self.addEventListener('fetch', (event) => {
     })());
   }
 });
+//This is the service worker with the Cache-first network

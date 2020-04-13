@@ -20,9 +20,7 @@
                 <li class="nav-item dropdown">
                   <a href="/helpline" class="nav-link">Helpline</a>
                 </li>      
-                <li class="nav-item dropdown">
-                  <a href="/cluster" class="nav-link">Cluster</a>
-                </li>              
+                          
               </ul>
             </div><a href="/f" class="btn btn-primary ml-lg-3">Form</a>
 

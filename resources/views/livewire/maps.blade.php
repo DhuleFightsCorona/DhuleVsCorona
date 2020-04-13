@@ -11,7 +11,7 @@
             </thead>
             <tbody>
 
-               @foreach ($stats['districtData'] as $dis => $district)
+                @foreach ($stats['districtData'] as $dis => $district)
                <tr>
                   <td><strong class="text-gray float-left">{{$dis}}</strong></td>
                   <td>
@@ -40,8 +40,7 @@
                      <div>
 
                         <div class="text-danger title" x-html='district'>Maharashtra</div>
-                        <div class="font-weight-bold">District Unknown For
-                           <br><span>{{$stats['districtData']['Unknown']['confirmed']}} </span>Cases</div>
+                       
 
                      </div>
                   </div>
@@ -50,7 +49,7 @@
                      <div class="card-body text-danger" style="margin-bottom:0rem;">
                         <h5 class="card-title text-danger" style="margin-bottom:0.25rem;">Confirmed</h5>
                         <p class="card-title" style="margin-bottom:0rem;"> <strong
-                              x-html='countdisplay()'>{{$stats['districtData']['Unknown']['confirmed']}}</strong></p>
+                              x-html='countdisplay()'>0</strong></p>
                      </div>
                   </div>
                </div>

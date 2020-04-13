@@ -29,4 +29,4 @@
 <!-- Tile for Win8 -->
 <meta name="msapplication-TileColor" content="{{ $config['background_color'] }}">
 <meta name="msapplication-TileImage" content="{{ data_get(end($config['icons']), 'src') }}">
-<script type='module' src="{{asset('pwabuilder-sw-register.js')}}"></script>
+{{-- <script type='module' src="{{asset('pwabuilder-sw-register.js')}}"></script> --}}
