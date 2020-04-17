@@ -23,5 +23,6 @@ Route::get('/pp','HomeController@policy');
 Route::get('/aboutus','HomeController@aboutus');
 Route::post('/familyform','DataController@familyform');
 Route::get('/familyform','DataController@familyformview');
-Route::get('/smallform','DataController@smallform');
+Route::get('/smallform','SmallformController@create');
+Route::post('/smallform','SmallformController@store');
 Route::get('/data','DataController@api');

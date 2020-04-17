@@ -22,7 +22,7 @@
                 </li>      
                           
               </ul>
-            </div><a href="/f" class="btn btn-primary ml-lg-3">Form</a>
+            </div><a href="/smallform" class="btn btn-primary ml-lg-3">Form</a>
 
           </div>
         </div>
